@@ -87,6 +87,13 @@
           "target": [
             "Request"
           ]
+        },
+        {
+          "name": "CreateOrder",
+          "pattern": "CreateOrder",
+          "target": [
+              "CreateOrder"
+          ]
         }
       ],
       "targets": {
@@ -96,6 +103,12 @@
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false
+        },
+        "CreateOrder": {
+          "id": "CreateOrder",
+          "name": "CreateOrder",
+          "viewType": "XML",
+          "transition": "slide"
         }
       }
     },

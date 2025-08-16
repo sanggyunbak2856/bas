@@ -63,6 +63,16 @@ sap.ui.define([
             aSorters.push(new Sorter(sPath, bDescending));
             let oBinding = this.byId("RequestTable").getBinding("rows");
             oBinding.sort(aSorters);
+        },
+        onCreateOrder: function () {
+            this.getOwnerComponent().getRouter().navTo("CreateOrder");
+        },
+        onReset: function() {
+            this.byId("ReqNum").setValue("");
+            this.byId("ReqGood").setValue("");
+            this.byId("Requester").setValue("");
+            this.byId("ReqDate").setValue("");
+            this.byId("ReqStatus").setSelectedIndex(0);
         }
     });
 });

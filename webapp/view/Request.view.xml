@@ -86,6 +86,10 @@
                     <OverflowToolbar >
                         <Title id="TableName" text="물품 요청 목록" />
                         <ToolbarSpacer />
+                        <Button 
+                            text="물품 요청 생성"
+                            press="onCreateOrder"
+                            type="Transparent"/>
                         <Button
                             icon="sap-icon://sort"
                             tooltip="정렬"
