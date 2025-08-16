@@ -1,0 +1,16 @@
+{
+    "RequestStatus": [
+        {
+            "key": "A",
+            "text": "승인"
+        },
+        {
+            "key": "B",
+            "text": "처리대기"
+        },
+        {
+            "key": "C",
+            "text": "반려"
+        }
+    ]
+}

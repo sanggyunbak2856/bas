@@ -1,6 +1,23 @@
 <mvc:View controllerName="project1.controller.app"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    displayBlock="true">
+    <tnt:ToolPage id="toolPage">
+        <tnt:header>
+            <tnt:ToolHeader>
+                <Image src="image/image.png" class="sapUiSmallMargin" height="30px" />
+                <MenuButton>
+                    <menu>
+                        <Menu>
+                            <MenuItem text="물품 요청 목록"/>
+                            <MenuItem text="물품 요청 현황"/>
+                        </Menu>
+                    </menu>
+                </MenuButton>
+            </tnt:ToolHeader>
+        </tnt:header>
+    </tnt:ToolPage>
+    <App class="myAppDemoWT" id="app">
+    </App>
 </mvc:View>

@@ -33,7 +33,7 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": true,
+    "flexEnabled": false,
     "dependencies": {
       "minUI5Version": "1.139.0",
       "libs": {
@@ -51,6 +51,14 @@
         "settings": {
           "bundleName": "project1.i18n.i18n"
         }
+      },
+      "Request": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "RequestOrder.json"
+      },
+      "RequestStatus": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "RequestStatus.json"
       }
     },
     "resources": {
@@ -74,24 +82,27 @@
       },
       "routes": [
         {
-          "name": "Routeapp",
-          "pattern": ":?query:",
+          "name": "Request",
+          "pattern": "",
           "target": [
-            "Targetapp"
+            "Request"
           ]
         }
       ],
       "targets": {
-        "Targetapp": {
-          "id": "app",
-          "name": "app"
+        "Request": {
+          "id": "Request",
+          "name": "Request",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false
         }
       }
     },
     "rootView": {
-      "viewName": "project1.view.App",
+      "viewName": "project1.view.app",
       "type": "XML",
-      "id": "App",
+      "id": "appView",
       "async": true
     }
   }
